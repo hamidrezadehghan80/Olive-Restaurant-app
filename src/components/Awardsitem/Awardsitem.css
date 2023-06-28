@@ -1,0 +1,28 @@
+.app__Awardsitem{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1rem;
+}
+
+.app__Awardsitem-img{
+    margin-right: 1rem;
+}
+
+.app__Awardsitem-img img{
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.app__Awardsitem-info{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.app__Awardsitem-info h3{
+    font-size: 23px ;
+    line-height: 30px;
+}

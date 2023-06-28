@@ -1,0 +1,48 @@
+.app__intro-video{
+    height: 100vh;
+    position: relative;
+}
+
+.app__intro-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.app__intro-video-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: var(--color-black);
+    opacity: 60%;
+}
+
+.app__intro-video-overlay-btn{
+    cursor:pointer;
+}
+
+.app__intro-video-overlay-btn *{
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 2000px) {
+    .app__intro-video-overlay-btn *{
+        font-size: 140px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .app__intro-video-overlay-btn *{
+        font-size: 110px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__intro-video-overlay-btn *{
+        font-size: 70px;
+    }
+}
+

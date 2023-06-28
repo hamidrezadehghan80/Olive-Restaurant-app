@@ -1,0 +1,145 @@
+.app__gallery{
+    padding: 4rem 0rem 4rem 6rem;
+    background-color: var(--color-black);
+}
+
+.app__gallery-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 500px;
+    padding-right: 2rem;
+}
+
+.app__gallery-slider{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+    position: relative;
+}
+
+.app__gallery-slider-container{
+    display: flex;
+    flex-direction: row;
+    max-width: max-content;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.app__gallery-slider-container::-webkit-scrollbar{
+    display: none;
+}
+
+
+.app__gallery-image-card{
+    position: relative;
+    min-width: 301px;
+    height: 447px;
+    margin-right: 2rem;
+}
+
+.app__gallery-image-card-icon{
+    position: absolute;
+    font-size: 2.5rem;
+    opacity: .5;
+    color: var(--color-white);
+    transition: .5s ease;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.app__gallery-image-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: 500ms ease;
+}
+
+.app__gallery-image-card:hover img{
+    opacity: .4;
+}
+
+.app__gallery-image-card:hover .app__gallery-image-card-icon{
+    opacity: 1;
+}
+
+.app__gallery-slider-arrow {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    bottom: -40%;
+
+    padding: 0rem 1rem;
+}
+
+.app__gallery-slider-icon{
+    border-radius: 20%;
+    color: var(--color-golden);
+    background-color: var(--color-black);
+    transition: .5s ease;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.app__gallery-slider-icon:hover{
+    color: var(--color-white);
+}
+
+@media screen and (min-width: 2000px) {
+    .app__gallery-info{
+        min-width: 1000px;
+        padding-right: 4rem;
+    }
+    .app__gallery-image-card{
+        min-width: 400px;
+        height: 550px;
+    }
+}
+
+@media screen  and (max-width: 1150px) {
+    .app__gallery{
+        flex-direction: column;
+        padding : 2rem;
+    }
+
+    .app__gallery-slider{
+        margin : 4rem 0rem;
+        max-width: 100%;
+    }
+}
+
+@media screen  and (max-width: 850px) {
+    .app__gallery{
+        padding : 3rem 0rem 3rem 3rem;
+    }
+}
+
+@media screen  and (max-width: 650px) {
+    .app__gallery{
+        padding : 3rem 0rem 3rem 2rem;
+    }
+
+    .app__gallery-info{
+        min-width: 100%;
+    }
+
+    .app__gallery-image-card{
+        min-width: 240px;
+        height: 320px;
+    }
+
+    .app__gallery-slider-icon{
+        font-size: 25px;
+    }
+
+}
+
